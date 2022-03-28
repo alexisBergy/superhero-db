@@ -25,7 +25,6 @@ function App(props) {
         <div className='grid-container'>
           {superhero && superhero.map(sh => {
             return (
-              //<div sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
               <div className='grid-item' key={sh.id}>
                 <CustomCard
                   image = {sh.image.url}
@@ -38,7 +37,6 @@ function App(props) {
             )
           })}
         </div>
-      {/* </div> */}
     </div>
   );
 }
